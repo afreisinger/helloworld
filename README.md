@@ -6,13 +6,13 @@ All afreisinger DockerImages/NPM Packages/Maven artifacts can be viewed under "p
 - `docker build . -t helloworld`
 
 ### Tag the images to the package registry path
-- `docker tag helloworld docker.pkg.github.com/afreisinger/container-images/helloworld:2.0.0`
+- `docker tag helloworld docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
 
 ### Run the docker image on the engine
 - `docker run helloworld -p 80:80`
 
 ### Push the images to the Github package registry
-- `docker push docker.pkg.github.com/afreisinger/helloworld/helloworld`
+- `docker push docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
 
 ### Dockerfile
 ```
