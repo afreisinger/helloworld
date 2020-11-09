@@ -1,5 +1,5 @@
-# Helloworld Repository for afreisinger
-All afreisinger Helloworld. DockerImages/NPM Packages can be viewed under "packages" tab
+# Helloworld repository for afreisinger
+All afreisinger Helloworld. Docker Images/NPM Packages can be viewed under "packages" tab
 
 ## Commands Used
 ### Create docker images using `build`
