@@ -1,18 +1,27 @@
-# Container Images Repository for afreisinger
-All afreisinger DockerImages/NPM Packages/Maven artifacts can be viewed under "packages" tab
+# Helloworld Repository for afreisinger
+All afreisinger Helloworld. DockerImages/NPM Packages can be viewed under "packages" tab
 
 ## Commands Used
 ### Create docker images using `build`
 - `docker build . -t helloworld`
 
+### Authenticating with a personal access token
+- `echo $PAT | docker login https://docker.pkg.github.com -u USERNAME --password-stdin`
+
 ### Tag the images to the package registry path
 - `docker tag helloworld docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
+
+### Push the images to the Github package registry
+- `docker push docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
+
+
+### Pull the images from the Github package registry
+- `docker pull docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
+
 
 ### Run the docker image on the engine
 - `docker run helloworld -p 80:80`
 
-### Push the images to the Github package registry
-- `docker push docker.pkg.github.com/afreisinger/helloworld/helloworld:latest`
 
 ### Dockerfile
 ```
